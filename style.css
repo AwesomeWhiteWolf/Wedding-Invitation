@@ -5,7 +5,7 @@ p, h1, h2, span, strong, label {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 h1 {
-  font-family: 'Playfair Display', cursive; 
+  font-family: 'Playfair Display', serif; 
 }
 h2, h3 {
   font-family: 'Playfair Display', serif;
