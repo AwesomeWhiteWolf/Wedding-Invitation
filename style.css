@@ -1,22 +1,19 @@
 html {
   scroll-behavior: smooth;
 }
-p, h1, h2, span, strong, label {
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-}
+
 h1 {
   font-family: 'Playfair Display', serif; 
 }
 h2, h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display';
+  font-style: italic;
 }
 span {
   font-family: 'Great Vibes', sans-serif;
-  font-size: larger;
 }
-p, input, label {
-  font-family: 'Playfair Display';
-  font-weight: 300;
+p, strong, input, label {
+  font-family: 'Lora', serif;
 }
 .color-circle:hover {
   transform: scale(1.1);
@@ -28,27 +25,6 @@ button:hover {
   transition: transform 0.5s ease;
 }
 
-input[type="radio"] {
-  -webkit-appearance: none;
-  -moz-appearance: none; 
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #4ade80; /* Зелёная граница */
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-}
-
-input[type="radio"]:checked {
-  background-color: #4ade80; /* Зелёный фон при выборе */
-  border-color: #4ade80;
-}
-
-input[type="radio"]:focus {
-  box-shadow: 0 0 0 1px rgba(74, 222, 128, 0.5); 
-}
-
 hr {
 	margin: 20px 0;
 	padding: 0;
@@ -56,7 +32,8 @@ hr {
 	border: none;
 	box-sizing: border-box;
 	background-position: 50%;
-	color: green;
+	color: #69A86A;
 	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3px" height="3px" viewBox="0 0 3 3" fill="green"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
 	background-size: 6px 6px;
 }
+
