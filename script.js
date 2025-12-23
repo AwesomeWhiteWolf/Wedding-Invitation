@@ -1,4 +1,4 @@
-const targetDate = new Date(2026, 3, 7, 13, 0); 
+const targetDate = new Date(2026, 2, 7, 13, 0); 
 
 function updateCountdown() {
   const now = new Date();
@@ -20,3 +20,4 @@ function updateCountdown() {
 // Запустите обновление каждую секунду
 setInterval(updateCountdown, 1000);
 updateCountdown(); // Инициализация
+
