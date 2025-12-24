@@ -20,4 +20,3 @@ function updateCountdown() {
 // Запустите обновление каждую секунду
 setInterval(updateCountdown, 1000);
 updateCountdown(); // Инициализация
-

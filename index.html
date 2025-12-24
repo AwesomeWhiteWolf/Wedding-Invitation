@@ -15,38 +15,48 @@
             background-color: #F5FFFA;
         }
         .invitation-card1 {
-            background-image: url('images/headerImg.jpg');
-            background-size: cover;
-            background-position: 50% 30%;
+          height: 45rem;
+          background-image: url('images/headerImg.jpg');
+          background-size: cover;
+          background-position: 50% 60%;
+          background-repeat: no-repeat;
+          overflow: hidden;
         }
         .invitation-card2 {
-            background-image: url('images/footerImg.jpg');
-            background-size: cover;
-            background-position: 50% 30%;
+          height: 20rem;
+          width: 100%;
+          background-image: url('images/centerImg.jpg');
+          background-size: cover;
+          background-position: 50% -20%;
+          background-repeat: no-repeat;
+          overflow: hidden;
         }
-        @media (max-width: 768px) {
-          #sadAndJoy {
-            visibility: hidden;
-          }
+        .invitation-card3 {
+          height: 45rem;
+          background-image: url('images/footerImg.jpg');
+          background-size: cover;
+          background-position: 50% 70%;
+          background-repeat: no-repeat;
+          overflow: hidden;
+        }
+        @media (max-width: 1000px) {
           .invitation-card1 {
-            background-size: 130% auto;
-            background-position: 50% 10%;
+            height: 30rem;
+            background-position: 50% 70%;
           }
-          .invitation-card2 {
-            background-size: 115% auto;
-            background-position: 50% 5%;
+          .invitation-card3 {
+            height: 30rem;
+            background-position: 50% 90%;
           }
         }
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="flex justify-center items-center min-h-screen p-4" data-aos="fade-up" data-aos-duration="1000">
-  <div class="max-w-2xl w-full bg-[#ffffff] rounded-2xl shadow-lg overflow-hidden border border-gray-300">
+  <div class="max-w-xl w-full bg-[#ffffff] rounded-2xl shadow-lg overflow-hidden border border-gray-300">
         <!-- Header -->
-        <div class="invitation-card1 py-80">
-          <span id="sadAndJoy" class="text-4xl font-medium mt-56 italic text-[#ffffff] absolute left-0 right-0 flex justify-center items-end">и в горе, и в радости...</span>
-        </div>
-        <div class="mt-8 mb-5 text-center">
+        <div class="invitation-card1"></div>
+        <div class="mainInfo mt-7 mb-5 text-center">
           <h1 class="text-3xl font-bold text-[#69A86A] italic">ЕГОР & ЛИДИЯ</h1>
           <h2 class="text-xl font-bold text-[#69A86A] mt-3">НАШИ РОДНЫЕ И БЛИЗКИЕ!</h2>
         </div>
@@ -65,84 +75,86 @@
 
         <!-- Details -->
         <div class="p-5 text-center">
+          <div class="mb-6">
+              <h2 class="text-xl font-bold text-[#69A86A] mb-2">ДРЕСС-КОД:</h2> 
+              <p class="text-[#234B3A]">Дресс‑код: свободный<br>Пожалуйста не отягощайте себя поиском «правильного» цвета<br>
+              Для нас главное - разделить нашу радость с вами, дорогие гости.</p>
+          </div>
 
-            <div class="mb-6">
-                <h2 class="text-xl font-bold text-[#69A86A] mb-2">ДРЕСС-КОД:</h2> 
-                <p class="text-[#234B3A]">Дресс‑код: свободный<br>Пожалуйста не отягощайте себя поиском «правильного» цвета<br>
-                Для нас главное - разделить нашу радость с вами, наши дорогие гости.</p>
-            </div>
-
-            <div class="mb-6">
-                <h2 class="text-xl font-bold text-[#69A86A] mb-2">ПРОГРАММА ДНЯ:</h2>
-                <div class="text-center ml-1">
-                  <ul class="space-y-2">
-                    <li class="text-[#234B3A]">
-                      <strong class="font-medium text-lg">14:30 - сбор гостей</strong><br>
-                      <p class="">«Добрая Весть», ул. Мокрова, 28</p>
-                    </li>
-                    <li class="text-[#234B3A]">
-                      <strong class="font-medium text-lg">15:00 - венчание</strong><br>
-                      <p class="">«Добрая Весть», ул. Мокрова, 28</p>
-                    </li>
-                    <li class="text-[#234B3A]">
-                      <strong class="font-medium text-lg">18:00 - праздничный банкет</strong><br>
-                      <p class="">«White hall», ​ул. Балтахинова, 32</p>
-                    </li>
-                    <li class="text-[#234B3A]">
-                      <strong class="font-medium text-lg">00:00 - завершение банкета</strong><br>
-                      <p class="">«White hall», ​ул. Балтахинова, 32</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-            <div class="mt-0">
-                <h2 class="text-xl font-bold text-[#69A86A] mb-2">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</h2>
-                <p class="mb-2 text-[#234B3A]">Формат нашей свадьбы не предполагает развлечений для детей, просим оставить детей в надежных руках на день торжества.</p>
-                <p class="mb-2 text-[#234B3A]">Спасибо, что будете рядом с нами в этот важный день - ваше тепло и поддержка значат для нас очень много.</p>
-                
-                <p class="mb-2 text-[#234B3A]">Просим подтвердить своё присутствие до начала февраля любым удобным для вас способом</p>
-                <div class="max-w-2xl mx-auto mt-6 p-6 bg-[#ffffff] rounded-lg shadow-md border border-[#69A86A] text-center">
-                  <h3 class="text-xl font-serif font-bold text-[#69A86A] mb-2">Евангелие от Матфея 19:5-6</h3>
-                  <div class="text-[#234B3A] italic space-y-1">
-                      <p class="text-lg">5 И сказал: посему оставит человек отца и мать и прилепится к жене своей,</p>
-                      <p class="text-lg">и будут два одною плотью,</p>
-                      <p class="text-lg">6 так что они уже не двое, но одна плоть.</p>
-                      <p class="text-lg">Итак, что Бог сочетал, того человек да не разлучает.</p>
-                  </div>
-              </div>
-            </div>
-            
-            <div class="bg-[#ffffff] p-10 mt-6 rounded-lg shadow-lg border border-[#69A86A] text-center relative overflow-hidden">
-              <h2 class="text-xl font-bold text-[#69A86A] mb-6">ДО ТОРЖЕСТВА ОСТАЛОСЬ</h2>
-              <!-- Таймер -->
-              <div class="flex justify-center space-x-2 md:space-x-4">
-                <!-- Дни -->
-                <div class="flex flex-col items-center">
-                  <span class="text-5xl md:text-5xl text-[#69A86A]" id="days">35</span>
-                  <p class="text-xl font-medium md:text-lg text-[#69A86A]">дней</p>
-                </div>
-                <!-- Часы -->
-                <div class="flex flex-col items-center">
-                  <span class="text-5xl md:text-5xl text-[#69A86A]" id="hours">4</span>
-                  <p class="text-xl font-medium md:text-lg text-[#69A86A]">часов</p>
-                </div>
-                <!-- Минуты -->
-                <div class="flex flex-col items-center">
-                  <span class="text-5xl md:text-5xl text-[#69A86A]" id="minutes">57</span>
-                  <p class="text-xl font-medium md:text-lg text-[#69A86A]">минут</p>
-                </div>
-                <!-- Секунды -->
-                <div class="flex flex-col items-center">
-                  <span class="text-5xl md:text-5xl text-[#69A86A]" id="seconds">55</span>
-                  <p class="text-xl font-medium md:text-lg text-[#69A86A]">секунд</p>
-                </div>
+          <div class="mb-6">
+              <h2 class="text-xl font-bold text-[#69A86A] mb-2">ПРОГРАММА ДНЯ:</h2>
+              <div class="text-center ml-1">
+                <ul class="space-y-2">
+                  <li class="text-[#234B3A]">
+                    <strong class="font-medium text-lg">14:30 - сбор гостей</strong><br>
+                    <p class="">Церковь «Добрая Весть», <br>ул. Мокрова, 28</p>
+                  </li>
+                  <li class="text-[#234B3A]">
+                    <strong class="font-medium text-lg">15:00 - венчание</strong><br>
+                    <!-- <p class="">«Добрая Весть», ул. Мокрова, 28</p> -->
+                  </li>
+                  <li class="text-[#234B3A]">
+                    <strong class="font-medium text-lg">18:00 - праздничный банкет</strong><br>
+                    <p class="">«White hall», ​ул. Балтахинова, 32</p>
+                  </li>
+                  <li class="text-[#234B3A]">
+                    <strong class="font-medium text-lg">00:00 - завершение банкета</strong><br>
+                    <!-- <p class="">«White hall», ​ул. Балтахинова, 32</p> -->
+                  </li>
+                </ul>
               </div>
             </div>
         </div>
-        
+
+        <div class="invitation-card2 mb-6"></div>
+
+        <div class="p-5 text-center">
+          <div class="mt-0">
+              <h2 class="text-xl font-bold text-[#69A86A] mb-2">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</h2>
+              <p class="mb-2 text-[#234B3A]">Формат нашей свадьбы не предполагает развлечений для детей, просим оставить детей в надежных руках на день торжества. Мероприятие предназначено только для гостей 14 лет и старше.</p>
+              <p class="mb-2 text-[#234B3A]">Спасибо, что будете рядом с нами в этот важный день - ваше тепло и поддержка значат для нас очень много.</p>
+              
+              <p class="mb-2 text-[#234B3A]">Просим подтвердить своё присутствие до начала февраля любым удобным для вас способом</p>
+              <div class="max-w-2xl mx-auto mt-6 p-6 bg-[#ffffff] rounded-lg shadow-md border border-[#69A86A] text-center">
+                <h3 class="text-xl font-serif font-bold text-[#69A86A] mb-2">Евангелие от Матфея 19:5-6</h3>
+                <div class="text-[#234B3A] italic space-y-1">
+                    <p class="text-lg">5. И сказал: посему оставит человек отца и мать и прилепится к жене своей,</p>
+                    <p class="text-lg">и будут два одною плотью,</p>
+                    <p class="text-lg">6. так что они уже не двое, но одна плоть.</p>
+                    <p class="text-lg">Итак, что Бог сочетал, того человек да не разлучает.</p>
+                </div>
+            </div>
+          </div>
+          
+          <div class="bg-[#ffffff] p-10 mt-6 rounded-lg shadow-lg border border-[#69A86A] text-center relative overflow-hidden">
+            <h2 class="text-xl font-bold text-[#69A86A] mb-6">ДО ТОРЖЕСТВА ОСТАЛОСЬ</h2>
+            <!-- Таймер -->
+            <div class="flex justify-center space-x-2 md:space-x-4">
+              <!-- Дни -->
+              <div class="flex flex-col items-center">
+                <span class="text-5xl md:text-5xl text-[#69A86A]" id="days">35</span>
+                <p class="text-xl font-medium md:text-lg text-[#69A86A]">дней</p>
+              </div>
+              <!-- Часы -->
+              <div class="flex flex-col items-center">
+                <span class="text-5xl md:text-5xl text-[#69A86A]" id="hours">4</span>
+                <p class="text-xl font-medium md:text-lg text-[#69A86A]">часов</p>
+              </div>
+              <!-- Минуты -->
+              <div class="flex flex-col items-center">
+                <span class="text-5xl md:text-5xl text-[#69A86A]" id="minutes">57</span>
+                <p class="text-xl font-medium md:text-lg text-[#69A86A]">минут</p>
+              </div>
+              <!-- Секунды -->
+              <div class="flex flex-col items-center">
+                <span class="text-5xl md:text-5xl text-[#69A86A]" id="seconds">55</span>
+                <p class="text-xl font-medium md:text-lg text-[#69A86A]">секунд</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Footer -->
-        <div class="p-20 py-72 mt-8 relative invitation-card2">
+        <div class="p-20 mt-8 relative invitation-card3">
             
         </div>
     </div>
